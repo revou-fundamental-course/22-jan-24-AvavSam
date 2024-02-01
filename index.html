@@ -1,49 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E Grocery</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav class="navigation-grocery">
-        <img src="" alt="logo" class="logo">
-        <ul class="navigation-items">
-            <li>Home</li>
-            <li>Our Product</li>
-            <li>Contact Us</li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Hello Welcome to E Grocery Site</h1>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ab.
-        </h4>
-        <img src="assets/pexels-guilherme-rossi-1755683.jpg" alt="header image">
-    </header>
-    <div class="our-products">
-        <div>
-            <div class="circle" style="background-image: url(assets/pexels-guilherme-rossi-1755683.jpg);"></div>
-            <p>Terdiri dari sayuran dan buah-buahan</p>
-        </div>
-        <div>
-            <div class="circle"></div>
-            <p>Terdiri dari sayuran dan buah-buahan</p>
-        </div>
-        <div>
-        <div class="circle"></div>
-            <p>Terdiri dari sayuran dan buah-buahan</p>
-        </div>
-    </div>
 
-    <div class="inquiry-customer">
-        <form class="inquiry-form" action="">
-            <label for="name">Name</label>
-            <input type="text" id="name">
-        </form>
-        <div class="output">
-            <!-- Put output here -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Titillium+Web&display=swap" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="assets/logo funedc.png" alt="logo" class="logo" />
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Product</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="banner">
+        <h1 class="title">FunEdc E-Grocery Store</h1>
+        <h4>Everyday things at the palm of your hand</h4>
+      </div>
+
+      <div class="content">
+        <div class="content-description">
+          <div id="slider">
+            <div id="slides">
+              <div class="slide"><img src="assets/pexels-guilherme-rossi-1755683.jpg" alt="header image" /></div>
+              <div class="slide"><img src="assets/pexels-guilherme-rossi-1755683.jpg" alt="header image" /></div>
+              <div class="slide"><img src="assets/pexels-guilherme-rossi-1755683.jpg" alt="header image" /></div>
+            </div>
+          </div>
+
+          <div>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quasi.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, itaque.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, fugiat?</li>
+              <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, quo?</li>
+            </ul>
+          </div>
         </div>
-    </div>
-</body>
+
+        <aside class="inquiry">
+          <div class="inquiry-description">
+            <h1>Contact Us</h1>
+            <p>Sales akan menghubungi anda 1x24 jam setelah pesanan diterima</p>
+          </div>
+
+          <div class="inquiry-input">
+            <div>
+              <label for="name"
+                >Your Name:
+                <input type="text" id="input-name" name="name" placeholder="First and last name" />
+              </label>
+              <p id="name-error" class="error-message"></p>
+            </div>
+            <div>
+              <label for="email"
+                >Email Address:
+                <input type="email" id="input-email" name="email" placeholder="email@email.com" />
+              </label>
+              <p id="email-error" class="error-message"></p>
+            </div>
+            <label for="interest"
+              >What are you interested in?
+              <select name="interest" id="input-interest">
+                <option value="">Select Option</option>
+                <option value="1">merchant</option>
+                <option value="2">franchise</option>
+                <option value="3">other</option>
+              </select>
+              <p id="interest-error" class="error-message"></p>
+            </label>
+            <button type="submit" id="tombol-kirim">Send</button>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <img src="assets/logo funedc.png" alt="logo" />
+      <p>&copy;2024 Avav Abdillah Sam</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
+
+<!-- https://www.blackbox.ai/share/77a20ff3-f57b-4278-a006-5f0e86f5aed1 -->
